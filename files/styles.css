@@ -1,0 +1,233 @@
+/* ALL */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/* NAV-BAR */
+
+/* .upperSpace {
+  width: 100%;
+  height: 30px;
+} */
+
+.nav-section {
+  background-color: rgb(242, 244, 252);
+  position: relative;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 100%;
+  flex-wrap: wrap;
+  /* height: 10%; */
+  border: 1px solid black;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+}
+
+/* .nav-container-flex {
+  background-color: rgb(242, 244, 252);
+  box-sizing: border-box;
+  width: 90vw;
+  height: 5vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  border: 1px solid black;
+} */
+
+@media (max-width: 770px) {
+  .nav-section {
+    flex-direction: column;
+  }
+}
+
+.nav-bar-logo {
+  background-color: transparent;
+  height: 18px;
+  width: 60px;
+  border: 1px solid black;
+  line-height: 20px;
+}
+
+.nav-bar {
+  width: 30vw;
+  height: 5vh;
+  display: flex;
+  /* flex-wrap: wrap; */
+  box-sizing: border-box;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+#nav1,
+#nav2,
+#nav3 {
+  background-color: transparent;
+  box-sizing: border-box;
+  color: #6b708d;
+  display: inline-block;
+  font-size: 17px;
+  font-weight: bold;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 10px;
+  vertical-align: top;
+  border: 1px solid black;
+  text-decoration: none;
+}
+
+#nav1 {
+  color: rgb(0, 130, 243);
+}
+
+#contactButton {
+  background-color: #072ac8;
+  color: white;
+  height: auto;
+  width: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: none;
+  font-size: 17px;
+}
+
+/* Main Content - Hero Content */
+
+.heroContent {
+  background-color: rgb(242, 244, 252);
+  position: absolute;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+ /*  width: 100%;
+  height: 80%; */
+  border: 1px solid black;
+}
+
+.heroContentFlex {
+  background-color: rgb(242, 244, 252);
+  width: 90vw;
+  height: 70vh;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2.5vh;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 700px) {
+  .heroContentFlex {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Hero Content Left */
+.heroContentLeft {
+  width: 40%;
+  height: auto;
+  border: 1px solid black;
+  margin-top: 1em;
+  margin-left: 2em;
+  padding: 2em;
+}
+
+h1 {
+  border: 1px solid black;
+  color: #292e47;
+  width: 40vw;
+  height: auto;
+  font-size: 60px;
+  padding-bottom: 20px;
+}
+
+#heroContentLeftText {
+  border: 1px solid black;
+  color: #6b708d;
+  width: 40vw;
+  height: 10vh;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.heroContentBottomLeftText {
+  border: 1px solid black;
+  color: #6b708d;
+  width: 40vw;
+  height: 10vh;
+  font-size: 20px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.heroContentBottomLeftText a,
+button {
+  color: #6b708d;
+  box-sizing: border-box;
+  color: #6b708d;
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.heroContentBottomLeftText a {
+  border: 1px solid black;
+  text-decoration: none;
+  color: #6b708d;
+}
+
+.heroContentBottomLeftText button {
+  text-decoration: none;
+  background-color: #072ac8;
+  color: white;
+}
+
+/* Hero Content Right */
+
+.heroContentRight {
+  width: 35vw;
+  height: 50vh;
+  border: 1px solid black;
+  margin-top: 1em;
+  margin-left: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 2em */
+  margin-right: 2em;
+  position: relative;
+}
+
+#heroImg1 {
+  /*    position: absolute; */
+  width: 320px;
+  height: 320px;
+  right: 1em;
+}
+
+#heroImg2 {
+  position: absolute;
+  width: 320px;
+  height: 346px;
+  top: 0;
+  left: 0;
+  /* puedo poner margen negativo */
+  /* right: 12em;
+  bottom: 8em; */
+}
