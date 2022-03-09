@@ -4,25 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Circle Agency</title>
   </head>
   <body>
-    <div class="upperSpace"></div>
-    <header class="nav-section">
-      <div class="nav-container-flex">
+    <header class="navSection">
+      <div class="navContainerFlex">
         <img
-          class="nav-bar-logo"
+          class="navBarLogo"
           src="../project-assets/logos/circle.svg"
           alt="Circle agency logo"
         />
-        <nav class="nav-bar">
+        <nav class="navBar">
           <a id="nav1" href="home.html">Home</a>
           <a id="nav2" href="projects.html">Projects</a>
           <a id="nav3" href="services.html">Services</a>
-        </nav></div>
-        <button id="contactButton" href="contact.html">Contact Us</button>
-      <!-- </div> -->
+        </nav>
+      </div>
+      <div class="navButtonFlex">
+        <button class="navButton" id="contactButton" href="contact.html">
+          Contact Us
+        </button>
+      </div>
     </header>
     <section class="heroContent">
       <main class="heroContentFlex">
@@ -33,16 +36,40 @@
             develop astonishing websites and mobile apps.
           </p>
           <div class="heroContentBottomLeftText">
-            <a href="#">See our work</a>
-            <button>Get in touch</button>
+            <div id="workTextLink">
+              <a href="work.html">See our work</a>
+            </div>
+            <div id="getInTouchBotton">
+              <button>Get in touch</button>
+            </div>
           </div>
         </article>
         <article class="heroContentRight">
-            <img id="heroImg1" src="../project-assets/hero-section/hero-image.png" alt="Friendly guy smiling" />
-          <img id="heroImg2" src="../project-assets/hero-section/card-1.png" alt="Credit card img" />
+          <img
+            id="heroImg1"
+            src="../project-assets/hero-section/hero-image.png"
+            alt="Friendly guy smiling"
+          />
+          <img
+            id="heroImg2"
+            src="../project-assets/hero-section/card-1.png"
+            alt="Credit card img"
+          />
           <img id="heroImg3" src="" alt="" />
         </article>
       </main>
+    </section>
+    <section class="clientLogosSection">
+      <article class="clientLogosFlex">
+        <img src="../project-assets/logos/airbnb-logo.svg" alt="Airbnb logo" />
+        <img src="../project-assets/logos/google-logo.svg" alt="Google logo" />
+        <img
+          src="../project-assets/logos/microsoft-logo.svg"
+          alt="Microsoft logo"
+        />
+        <img src="../project-assets/logos/fedex-logo.svg" alt="FedEx logo" />
+        <img src="../project-assets/logos/amazon-logo.svg" alt="Amazon logo" />
+      </article>
     </section>
 
     <script src="./index.js"></script>
