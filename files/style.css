@@ -102,7 +102,7 @@
 }
 
 .heroContentFlex {
-border: 1px solid black;
+  border: 1px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -179,7 +179,6 @@ border: 1px solid black;
   }
   .heroContentLeft {
     justify-items: flex-start;
-  
   }
 }
 
@@ -215,11 +214,10 @@ border: 1px solid black;
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
-
   }
 
-  .heroContentLeft{
-      max-width: 50%;
+  .heroContentLeft {
+    max-width: 50%;
   }
   /* .heroContentRight {
     max-width: 40%;
@@ -227,11 +225,10 @@ border: 1px solid black;
 
   #heroImg1 {
     max-width: 90%;
-}
+  }
 }
 
 @media (max-width: 770px) {
-
   #heroImg2,
   #heroImg3 {
     display: none;
@@ -241,6 +238,117 @@ border: 1px solid black;
 /* CLIENT LOGOS */
 
 .clientLogosSection {
-    border: 1px solid black;
-    display: flex;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.clientLogosFlex {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 90%;
+}
+
+#clientImg1,
+#clientImg2,
+#clientImg3,
+#clientImg4,
+#clientImg5 {
+  border: 1px solid black;
+  margin: 5px 50px 5px 50px;
+}
+
+@media (max-width: 1175px) {
+  #clientImg5 {
+    display: none;
+  }
+}
+
+/* PROJECTS SECTION */
+
+.projectsSection {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.projectsSection h2 {
+  border: 1px solid black;
+  font-size: 40px;
+}
+.projectsSectionFlex {
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectCardsContainer {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.projectCard {
+  border: 1px solid black;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+#projectImg1 {
+  max-width: 100%;
+}
+
+#projectImg2 {
+  max-width: 100%;
+}
+#projectImg3 {
+  max-width: 100%;
+
+}
+
+.projectCardTexts {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.projectCardTexts,
+h3 {
+  font-size: 24px;
+  color: #292e47;
+}
+.projectCardTexts,
+p {
+  font-size: 17px;
+  color: #6b708d;
+}
+.projectCardTexts,
+h3,
+p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.projectCardTexts a {
+    text-decoration: none;
+    font-size: 17px;
+    padding-top: 20px;
+}
+
+@media (max-width: 770px) {
+    .projectCardsContainer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
 }
