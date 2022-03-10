@@ -22,7 +22,7 @@
         </nav>
       </div>
       <div class="navButtonFlex">
-        <button class="navButton" id="contactButton" href="contact.html">
+        <button class="navButton contactButton" href="contact.html">
           Contact Us
         </button>
       </div>
@@ -143,7 +143,11 @@
             src="../project-assets/testimonial-section/memoji-1.png"
             alt="memoji1"
           />
-          <img id="memoji2" src="../project-assets/testimonial-section/memoji-2.png" alt="memoji2" />
+          <img
+            id="memoji2"
+            src="../project-assets/testimonial-section/memoji-2.png"
+            alt="memoji2"
+          />
         </div>
         <div class="memojiContainerCenter">
           <h2>Hear What Our Clients Have to Say</h2>
@@ -152,7 +156,11 @@
             enjoyed working with you."
           </p>
           <div class="clientInfoBox">
-            <img id="clientPhoto" src="../project-assets/testimonial-section/profile.png" alt="Client Photo">
+            <img
+              id="clientPhoto"
+              src="../project-assets/testimonial-section/profile.png"
+              alt="Client Photo"
+            />
             <div class="clientInfoText">
               <p id="clientName">Kristin Watson</p>
               <p id="clientWeb">Booking.com</p>
@@ -160,54 +168,90 @@
           </div>
         </div>
         <div class="memojiContainerRight">
-          <img id="memoji3" src="../project-assets/testimonial-section/memoji-3.png" alt="memoji3" />
-          <img id="memoji4" src="../project-assets/testimonial-section/memoji-4.png" alt="memoji4" />
+          <img
+            id="memoji3"
+            src="../project-assets/testimonial-section/memoji-3.png"
+            alt="memoji3"
+          />
+          <img
+            id="memoji4"
+            src="../project-assets/testimonial-section/memoji-4.png"
+            alt="memoji4"
+          />
         </div>
       </article>
     </section>
     <section class="servicesSection">
-      <article class="projectsSectionFlex">
+      <article class="servicesSectionFlex">
         <h2>Our Services</h2>
-        <div class="projectCardsContainer">
-          <div class="projectCard">
-            <img
-              id="projectImg1"
-              src="../project-assets/projects-section/1.jpg"
-              alt="Simplify project image"
-            />
-            <div class="projectCardTexts">
-              <h3>Simplify</h3>
-              <p>UI Design & App Development</p>
+        <div class="serviceCardsContainer">
+          <div class="serviceCard">
+            <div id="serviceImgContainer">
+              <img
+                id="serviceImg1"
+                src="../project-assets/services-section/icons/1.svg"
+                alt="UX Design image"
+              />
+            </div>
+            <div class="serviceCardTexts">
+              <h3>User Interface Design</h3>
+              <p>
+                Circle provides you with a stunning user interface design that
+                is accessible to everyone.
+              </p>
               <a href="#">Learn More</a>
             </div>
           </div>
-          <div class="projectCard">
-            <img
-              id="projectImg2"
-              src="../project-assets/projects-section/2.jpg"
-              alt="Dashcoin project image"
-            />
-            <div class="projectCardTexts">
-              <h3>Dashcoin</h3>
-              <p>Web Development</p>
+          <div class="serviceCard">
+            <div id="serviceImgContainer">
+              <img
+                id="serviceImg2"
+                src="../project-assets/services-section/icons/2.svg"
+                alt="Dashcoin project image"
+              />
+            </div>
+            <div class="serviceCardTexts">
+              <h3>User Experience Design</h3>
+              <p>
+                Circle always focuses on delivering the best user experience to
+                your customers.
+              </p>
               <a href="#">Learn More</a>
             </div>
           </div>
-          <div class="projectCard">
-            <img
-              id="projectImg3"
-              src="../project-assets/projects-section/5.jpg"
-              alt="Vectorify project image"
-            />
-            <div class="projectCardTexts">
-              <h3>Vectorify</h3>
-              <p>User Experience Design</p>
+          <div class="serviceCard">
+            <div id="serviceImgContainer">
+              <img
+                id="projectImg3"
+                src="../project-assets/services-section/icons/3.svg"
+                alt="Vectorify project image"
+              />
+            </div>
+            <div class="serviceCardTexts">
+              <h3>Application Development</h3>
+              <p>
+                We develop high-quality mobile and web applications using the
+                latest technology stack.
+              </p>
               <a href="#">Learn More</a>
             </div>
           </div>
+        </div>
+      </article>
+    </section>
+    <section class="contactSection">
+      <article class="contactContainerFlex">
+        <h2>Do you have any questions?</h2>
+        <p>Let us help you!</p>
+        <div class="inputWithButton">
+          <form class="contactFormContainer">
+            <input id="emailInput" type="email" placeholder="Enter your email" />
+          </form>
+          <button class="contactButton">Subscribe</button>
         </div>
       </article>
     </section>
     <script src="./index.js"></script>
   </body>
 </html>
+

@@ -10,6 +10,7 @@
 .navSection {
   display: flex;
   flex-direction: column;
+  background-color: #f2f4fc;
   /* border: 1px solid black; */
 }
 
@@ -47,7 +48,7 @@
   color: #072ac8;
 }
 
-#contactButton {
+.contactButton {
   background-color: #072ac8;
   color: white;
   max-height: 80px;
@@ -112,6 +113,7 @@
   align-content: center;
   padding: 20px;
   border: 1px solid black;
+  background-color: #f2f4fc;
 }
 
 .heroContentFlex {
@@ -255,6 +257,7 @@
   display: flex;
   justify-content: center;
   padding: 10px;
+  background-color: #f2f4fc;
 }
 
 .clientLogosFlex {
@@ -287,6 +290,7 @@
   display: flex;
   justify-content: center;
   padding: 10px;
+  background-color: #f2f4fc;
 }
 .projectsSection h2 {
   border: 1px solid black;
@@ -495,19 +499,22 @@ p {
   display: flex;
   justify-content: center;
   padding: 10px;
+  background-color: #f2f4fc;
 }
-.projectsSection h2 {
+.servicesSection h2 {
   border: 1px solid black;
   font-size: 40px;
+  color: #292e47;
 }
-.projectsSectionFlex {
+.servicesSectionFlex {
   border: 1px solid black;
   padding: 10px;
   display: flex;
   flex-direction: column;
+  margin-top: 50px;
 }
 
-.projectCardsContainer {
+.serviceCardsContainer {
   border: 1px solid black;
   display: flex;
   flex-direction: row;
@@ -515,7 +522,7 @@ p {
   padding: 20px;
 }
 
-.projectCard {
+.serviceCard {
   border: 1px solid black;
   max-width: 340px;
   display: flex;
@@ -524,53 +531,126 @@ p {
   margin: 10px;
 }
 
-#projectImg1 {
-  max-width: 100%;
+#serviceImgContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background-color: #ecf7ff;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+#serviceImg1 {
+  display: flex;
+  width: 50px;
 }
 
-#projectImg2 {
+#serviceImg2 {
   max-width: 100%;
+  width: 50px;
 }
-#projectImg3 {
+#serviceImg3 {
   max-width: 100%;
+  width: 50px;
 }
 
-.projectCardTexts {
+.serviceCardTexts {
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.projectCardTexts,
+.serviceCardTexts,
 h3 {
   font-size: 24px;
   color: #292e47;
 }
-.projectCardTexts,
+.serviceCardTexts,
 p {
   font-size: 17px;
   color: #6b708d;
 }
-.projectCardTexts,
+.serviceCardTexts,
 h3,
 p {
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
-.projectCardTexts a {
+.serviceCardTexts a {
   text-decoration: none;
   font-size: 17px;
   padding-top: 20px;
 }
 
 @media (max-width: 770px) {
-  .projectCardsContainer {
+  .serviceCardsContainer {
     flex-direction: column;
     align-items: flex-start;
   }
-  .projectsSection h2 {
+  .servicesSection h2 {
     text-align: center;
   }
 }
+
+/* CONTACT SECTION */
+
+.contactSection {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: #ffc600;
+}
+
+.contactContainerFlex {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+  padding: 10%;
+}
+
+.contactContainerFlex > h2 {
+  color: #292e47;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 47px;
+}
+
+.contactContainerFlex > p {
+  color: #6b708d;
+  font-size: 20px;
+}
+
+.inputWithButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+#emailInput {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-image: url(../project-assets/newsletter/icon/mail.svg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 50px;
+  padding-left: 60px;
+}
+/* .contactButton {
+  
+  } */
+
+  @media (max-width: 770px) {
+    .inputWithButton {
+        flex-direction: column;
+    }
+  }
