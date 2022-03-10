@@ -11,11 +11,9 @@
   display: flex;
   flex-direction: column;
   background-color: #f2f4fc;
-  /* border: 1px solid black; */
 }
 
 .navContainerFlex {
-  /* border: 1px solid black; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -23,10 +21,7 @@
 }
 
 .navBarLogo {
-  /*  border: 1px solid black; */
   width: 200px;
-  display: flex;
-  flex-shrink: 1;
 }
 
 .navBar {
@@ -36,7 +31,6 @@
 #nav1,
 #nav2,
 #nav3 {
-  /* border: 1px solid black; */
   text-decoration: none;
   color: #6b708d;
   font-size: 17px;
@@ -84,6 +78,7 @@
 
   .navBar {
     justify-content: space-evenly;
+    gap: 10%;
   }
 
   .navBarLogo {
@@ -111,13 +106,12 @@
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  padding: 20px;
-  border: 1px solid black;
+  padding: 40px 20px 80px 20px;
+
   background-color: #f2f4fc;
 }
 
 .heroContentFlex {
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -126,7 +120,6 @@
 }
 
 .heroContentLeft {
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -137,11 +130,9 @@
   font-size: 60px;
   line-height: 70px;
   color: #292e47;
-  border: 1px solid black;
 }
 
 #heroContentLeftText {
-  border: 1px solid black;
   line-height: 30px;
   text-align: center;
   font-size: 20px;
@@ -153,7 +144,7 @@
 .heroContentBottomLeftText {
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
+
   padding: 5px;
 }
 
@@ -179,7 +170,6 @@
 }
 
 #workTextLink a {
-  border: 1px solid black;
   text-decoration: none;
   color: #6b708d;
   font-size: 17px;
@@ -200,7 +190,6 @@
 /*  HERO SECTION RIGHT */
 
 .heroContentRight {
-  border: 1px solid black;
   position: relative;
 }
 
@@ -253,15 +242,13 @@
 /* CLIENT LOGOS */
 
 .clientLogosSection {
-  border: 1px solid black;
   display: flex;
   justify-content: center;
-  padding: 10px;
+  padding: 40px 20px 80px 20px;
   background-color: #f2f4fc;
 }
 
 .clientLogosFlex {
-  border: 1px solid black;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -273,7 +260,6 @@
 #clientImg3,
 #clientImg4,
 #clientImg5 {
-  border: 1px solid black;
   margin: 5px 50px 5px 50px;
 }
 
@@ -286,26 +272,22 @@
 /* PROJECTS SECTION */
 
 .projectsSection {
-  border: 1px solid black;
   display: flex;
   justify-content: center;
-  padding: 10px;
+  padding: 40px 20px 80px 20px;
   background-color: #f2f4fc;
 }
 .projectsSection h2 {
-  border: 1px solid black;
   font-size: 40px;
   color: #292e47;
 }
 .projectsSectionFlex {
-  border: 1px solid black;
   padding: 10px;
   display: flex;
   flex-direction: column;
 }
 
 .projectCardsContainer {
-  border: 1px solid black;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -313,12 +295,12 @@
 }
 
 .projectCard {
-  border: 1px solid black;
   max-width: 340px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   margin: 10px;
+  background-color: #ffffff;
 }
 
 #projectImg1 {
@@ -360,6 +342,7 @@ p {
   text-decoration: none;
   font-size: 17px;
   padding-top: 20px;
+  font-weight: 600;
 }
 
 @media (max-width: 770px) {
@@ -375,16 +358,15 @@ p {
 /* CLIENT REVIEWS */
 
 .clientReviewSection {
-  border: 1px solid black;
   display: flex;
   justify-content: center;
-  padding: 0px 30px;
+  padding: 40px 20px 80px 20px;
   background-color: #292e47;
 }
 
 .clientReviewContainerFlex {
   display: flex;
-  border: 1px solid black;
+
   background-image: url(../project-assets/testimonial-section/orbit.png);
   width: 100%;
   height: 450px;
@@ -397,7 +379,6 @@ p {
 }
 
 .memojiContainerLeft {
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -418,7 +399,7 @@ p {
 .memojiContainerRight {
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
+
   display: flex;
   flex-direction: column;
   position: relative;
@@ -495,19 +476,16 @@ p {
 /* SERVICES */
 
 .servicesSection {
-  border: 1px solid black;
   display: flex;
   justify-content: center;
-  padding: 10px;
+  padding: 40px 20px 80px 20px;
   background-color: #f2f4fc;
 }
 .servicesSection h2 {
-  border: 1px solid black;
   font-size: 40px;
   color: #292e47;
 }
 .servicesSectionFlex {
-  border: 1px solid black;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -515,7 +493,6 @@ p {
 }
 
 .serviceCardsContainer {
-  border: 1px solid black;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -523,12 +500,12 @@ p {
 }
 
 .serviceCard {
-  border: 1px solid black;
   max-width: 340px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   margin: 10px;
+  background-color: #ffffff;
 }
 
 #serviceImgContainer {
@@ -584,6 +561,7 @@ p {
   text-decoration: none;
   font-size: 17px;
   padding-top: 20px;
+  font-weight: 600;
 }
 
 @media (max-width: 770px) {
@@ -599,7 +577,6 @@ p {
 /* CONTACT SECTION */
 
 .contactSection {
-  border: 1px solid black;
   display: flex;
   justify-content: center;
   padding: 10px;
@@ -649,8 +626,61 @@ p {
   
   } */
 
-  @media (max-width: 770px) {
-    .inputWithButton {
-        flex-direction: column;
-    }
+@media (max-width: 770px) {
+  .inputWithButton {
+    flex-direction: column;
   }
+}
+
+/* FOOTER */
+
+.footerSection {
+  padding: 50px 20px 50px 20px;
+  display: flex;
+  justify-content: center;
+  background-color: #ecf7ff;
+}
+
+.footerFlex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 20px;
+}
+
+#footerContainerLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#footerLogo {
+  width: 200px;
+}
+
+#footerContainerLeft > p {
+  font-size: 17px;
+  color: #6b708d;
+}
+
+#footerContainerRightGrid {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 10px;
+}
+
+@media (min-width: 900px) {
+  .footerFlex {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20%;
+  }
+  #footerContainerLeft {
+      display: flex;
+      align-items: flex-start;
+  }
+}
