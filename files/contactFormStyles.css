@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/* NAV BAR */
+
+.navSection {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f4fc;
+}
+
+.navContainerFlex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.navBarLogo {
+  width: 200px;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-evenly;
+}
+#nav1,
+#nav2,
+#nav3 {
+  text-decoration: none;
+  color: #6b708d;
+  font-size: 17px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#nav1 {
+  color: #072ac8;
+}
+
+.contactButton {
+  background-color: #072ac8;
+  color: white;
+  max-height: 80px;
+  width: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: none;
+  border-radius: 12px;
+  font-size: 17px;
+}
+.contactButton:hover {
+    cursor: pointer;
+}
+.submitButton:hover {
+    cursor: pointer;
+}
+.navButtonFlex {
+  display: flex;
+  justify-content: center;
+}
+.navButton {
+  align-items: center;
+  justify-content: center;
+}
+
+/* FORM SECTION */
+
+#contactFormSection {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px 80px 20px;
+  background-color: #f2f4fc;
+}
+
+.formWraper {
+    display: flex;
+    justify-items: center;
+    align-self: center;
+}
+
+.contactFormFlex {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.formFlexDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactFormFlex h2 {
+  font-size: 40px;
+  color: #292e47;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contactFormContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 90%;
+}
+
+.labelText {
+  color: #6b708d;
+  font-size: 20px;
+}
+
+.formTextBox {
+  color: #6b708d;
+  font-size: 17px;
+  background: #6b708d1a;
+  border: none;
+  padding: 20px;
+  width: 90%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#emailInput {
+    width: 351px
+}
+
+#phoneInput {
+  width: 351px;
+}
+
+#messageBox {
+  height: 200px;
+  text-align: left;
+}
+
+/* SUBMIT BUTTON */
+
+.submitButton {
+  background-color: #072ac8;
+  color: white;
+  max-height: 80px;
+  width: auto;
+  padding: 30px;
+  border: none;
+  border-radius: 12px;
+  font-size: 17px;
+  margin-top: 5px;
+}
+
+
+/* FOOTER */
+
+.footerSection {
+    padding: 50px 20px 50px 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #ecf7ff;
+  }
+  
+  .footerFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+  }
+  
+  #footerContainerLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  #footerLogo {
+    width: 200px;
+  }
+  
+  #footerContainerLeft > p {
+    font-size: 17px;
+    color: #6b708d;
+  }
+  
+  #footerContainerRightGrid {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10px;
+  }
+
+
+/* RESPONSIVE */
+
+@media (min-width: 770px) {
+  .navSection {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .navContainerFlex {
+    width: 70%;
+  }
+
+  .navBar {
+    justify-content: space-evenly;
+    gap: 10%;
+  }
+
+  .navBarLogo {
+    flex-shrink: 0.5;
+  }
+
+  .contactFormFlex h2 {
+      text-align: left;
+  }
+
+  .formFlexDiv {
+    flex-direction: row;
+
+  }
+
+  .formTextBox {
+    color: #6b708d;
+    font-size: 17px;
+    background: #6b708d1a;
+    border: none;
+    padding: 20px;
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  #formFlexDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #emailInput {
+      width: 250px;
+      padding-right: 30px;
+  }
+
+  #phoneInput {
+    width: 250px;
+    padding-right: 30px;
+  }
+
+  
+}
+
+@media (max-width: 770px) {
+  .contactButton {
+    display: none;
+  }
+}
+
+@media (min-width: 1100px) {
+  .navBar {
+    justify-content: space-between;
+  }
+  .navContainerFlex {
+    max-width: 45%;
+  }
+  .navBarLogo {
+    max-width: 100px;
+  }
+  
+}
+
+
+@media (min-width: 900px) {
+    .footerFlex {
+      flex-direction: row;
+      justify-content: center;
+      gap: 20%;
+    }
+    #footerContainerLeft {
+        display: flex;
+        align-items: flex-start;
+    }
+  }
+

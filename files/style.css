@@ -56,6 +56,10 @@
   font-size: 17px;
 }
 
+.contactButton:hover {
+  cursor: pointer;
+}
+
 .navButtonFlex {
   display: flex;
   justify-content: center;
@@ -65,41 +69,8 @@
   justify-content: center;
 }
 
-@media (min-width: 770px) {
-  .navSection {
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  .navContainerFlex {
-    width: 70%;
-  }
-
-  .navBar {
-    justify-content: space-evenly;
-    gap: 10%;
-  }
-
-  .navBarLogo {
-    flex-shrink: 0.5;
-  }
-}
-
-@media (min-width: 1100px) {
-  .navBar {
-    justify-content: space-between;
-  }
-  .navContainerFlex {
-    max-width: 45%;
-  }
-  .navBarLogo {
-    max-width: 100px;
-  }
-}
 
 /* HERO SECTION */
-/*  HERO SECTION LEFT */
 
 .heroContent {
   display: flex;
@@ -155,6 +126,9 @@
   margin: 10px;
 }
 
+#getInTouchBotton > button:hover {
+ cursor: pointer;
+}
 #getInTouchBotton button {
   background-color: #072ac8;
   color: white;
@@ -175,19 +149,6 @@
   font-size: 17px;
 }
 
-@media (min-width: 770px) {
-  .heroContentBottomLeftText {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  .heroContentLeft {
-    justify-items: center;
-  }
-}
-
-/*  HERO SECTION RIGHT */
 
 .heroContentRight {
   position: relative;
@@ -213,31 +174,7 @@
   right: -70px;
 }
 
-@media (min-width: 770px) {
-  .heroContentFlex {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
 
-  .heroContentLeft {
-    max-width: 50%;
-  }
-  /* .heroContentRight {
-    max-width: 40%;
-  } */
-
-  #heroImg1 {
-    max-width: 90%;
-  }
-}
-
-@media (max-width: 770px) {
-  #heroImg2,
-  #heroImg3 {
-    display: none;
-  }
-}
 
 /* CLIENT LOGOS */
 
@@ -263,15 +200,11 @@
   margin: 5px 50px 5px 50px;
 }
 
-@media (max-width: 1175px) {
-  #clientImg5 {
-    display: none;
-  }
-}
+
 
 /* PROJECTS SECTION */
 
-.projectsSection {
+#projectsSection {
   display: flex;
   justify-content: center;
   padding: 40px 20px 80px 20px;
@@ -345,15 +278,7 @@ p {
   font-weight: 600;
 }
 
-@media (max-width: 770px) {
-  .projectCardsContainer {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .projectsSection h2 {
-    text-align: center;
-  }
-}
+
 
 /* CLIENT REVIEWS */
 
@@ -466,22 +391,17 @@ p {
   right: 20%;
 }
 
-@media (max-width: 1000px) {
-  .memojiContainerLeft,
-  .memojiContainerRight {
-    display: none;
-  }
-}
+
 
 /* SERVICES */
 
-.servicesSection {
+#servicesSection {
   display: flex;
   justify-content: center;
   padding: 40px 20px 80px 20px;
   background-color: #f2f4fc;
 }
-.servicesSection h2 {
+#servicesSection h2 {
   font-size: 40px;
   color: #292e47;
 }
@@ -564,15 +484,7 @@ p {
   font-weight: 600;
 }
 
-@media (max-width: 770px) {
-  .serviceCardsContainer {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .servicesSection h2 {
-    text-align: center;
-  }
-}
+
 
 /* CONTACT SECTION */
 
@@ -622,15 +534,7 @@ p {
   background-size: 50px;
   padding-left: 60px;
 }
-/* .contactButton {
-  
-  } */
 
-@media (max-width: 770px) {
-  .inputWithButton {
-    flex-direction: column;
-  }
-}
 
 /* FOOTER */
 
@@ -672,6 +576,135 @@ p {
   grid-template-rows: 1fr 1fr;
   row-gap: 10px;
 }
+
+
+
+
+/* RESPONSIVE */
+
+/* NAVBAR */
+
+@media (min-width: 770px) {
+  .navSection {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .navContainerFlex {
+    width: 70%;
+  }
+
+  .navBar {
+    justify-content: space-evenly;
+    gap: 10%;
+  }
+
+  .navBarLogo {
+    flex-shrink: 0.5;
+  }
+}
+
+@media (min-width: 1100px) {
+  .navBar {
+    justify-content: space-between;
+  }
+  .navContainerFlex {
+    max-width: 45%;
+  }
+  .navBarLogo {
+    max-width: 100px;
+  }
+}
+
+/* HERO */
+
+@media (min-width: 770px) {
+  .heroContentBottomLeftText {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .heroContentLeft {
+    justify-items: center;
+  }
+}
+
+@media (min-width: 770px) {
+  .heroContentFlex {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .heroContentLeft {
+    max-width: 50%;
+  }
+
+
+  #heroImg1 {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 770px) {
+  #heroImg2,
+  #heroImg3 {
+    display: none;
+  }
+}
+
+/* CLIENT LOGOS */
+
+@media (max-width: 1175px) {
+  #clientImg5 {
+    display: none;
+  }
+}
+
+/* PROJECTS */
+
+@media (max-width: 770px) {
+  .projectCardsContainer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #projectsSection h2 {
+    text-align: center;
+  }
+}
+
+/* CLIENT REVIEWS */
+
+@media (max-width: 1000px) {
+  .memojiContainerLeft,
+  .memojiContainerRight {
+    display: none;
+  }
+}
+
+/* SERVICES */
+
+@media (max-width: 770px) {
+  .serviceCardsContainer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #servicesSection h2 {
+    text-align: center;
+  }
+}
+
+/* CONTACT */
+
+@media (max-width: 770px) {
+  .inputWithButton {
+    flex-direction: column;
+  }
+}
+
+/* FOOTER */
 
 @media (min-width: 900px) {
   .footerFlex {

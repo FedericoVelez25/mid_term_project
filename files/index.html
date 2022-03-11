@@ -16,13 +16,13 @@
           alt="Circle agency logo"
         />
         <nav class="navBar">
-          <a id="nav1" href="home.html">Home</a>
-          <a id="nav2" href="projects.html">Projects</a>
-          <a id="nav3" href="services.html">Services</a>
+          <a id="nav1" href="index.html">Home</a>
+          <a id="nav2" href="#projectsSection">Projects</a>
+          <a id="nav3" href="#servicesSection">Services</a>
         </nav>
       </div>
       <div class="navButtonFlex">
-        <button class="navButton contactButton" href="contact.html">
+        <button class="navButton contactButton" onclick="window.location.href='contactForm.html'">
           Contact Us
         </button>
       </div>
@@ -40,7 +40,7 @@
               <a href="work.html">See our work</a>
             </div>
             <div id="getInTouchBotton">
-              <button>Get in touch</button>
+              <button type="button" onclick="window.location.href='contactForm.html'">Get in touch</button>
             </div>
           </div>
         </article>
@@ -92,7 +92,7 @@
         />
       </article>
     </section>
-    <section class="projectsSection">
+    <section id="projectsSection">
       <article class="projectsSectionFlex">
         <h2>Recent Projects</h2>
         <div class="projectCardsContainer">
@@ -181,7 +181,7 @@
         </div>
       </article>
     </section>
-    <section class="servicesSection">
+    <section id="servicesSection">
       <article class="servicesSectionFlex">
         <h2>Our Services</h2>
         <div class="serviceCardsContainer">
