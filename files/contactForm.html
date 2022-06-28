@@ -10,11 +10,13 @@
   <body>
     <header class="navSection">
       <div class="navContainerFlex">
-        <img
-          class="navBarLogo"
-          src="project-assets/logos/circle.svg"
-          alt="Circle agency logo"
-        />
+        <a href="index.html">
+          <img
+            class="navBarLogo"
+            src="project-assets/logos/circle.svg"
+            alt="Circle agency logo"
+          />
+        </a>
         <nav class="navBar">
           <a id="nav1" href="index.html">Home</a>
           <a id="nav2" href="index.html">Projects</a>
@@ -34,60 +36,64 @@
       <article class="contactFormFlex">
         <h2>Contact Us</h2>
         <div class="formWraper">
-        <form action="POST" class="contactFormContainer">
-          <label class="labelText" for="FName">Full Name *</label>
-          <input
-            class="formTextBox"
-            type="text"
-            placeholder="Enter your full name"
-          />
+          <form action="POST" class="contactFormContainer">
+            <label class="labelText" for="FName">Full Name *</label>
+            <input
+              class="formTextBox"
+              type="text"
+              placeholder="Enter your full name"
+            />
 
-          <div id="formFlexDiv">
-            <div id="emailInput">
-              <label class="labelText" for="email">Email</label>
-              <input
-                class="formTextBox"
-                type="email"
-                placeholder="Enter your email"
-              />
+            <div id="formFlexDiv">
+              <div id="emailInput">
+                <label class="labelText" for="email">Email</label>
+                <input
+                  class="formTextBox"
+                  type="email"
+                  placeholder="Enter your email"
+                />
+              </div>
+              <div id="phoneInput">
+                <label class="labelText" for="phone">Phone</label>
+                <input
+                  class="formTextBox"
+                  type="tel"
+                  placeholder="Enter your phone"
+                />
+              </div>
             </div>
-            <div id="phoneInput">
-              <label class="labelText" for="phone">Phone</label>
-              <input
-                class="formTextBox"
-                type="tel"
-                placeholder="Enter your phone"
-              />
-            </div>
-          </div>
 
-          <label class="labelText" for="message">Message *</label>
-          <input
-            id="messageBox"
-            class="formTextBox"
-            type="text"
-            placeholder="Write your message here..."
-          />
-        </form>
-    </div>
+            <label class="labelText" for="message">Message *</label>
+            <input
+              id="messageBox"
+              class="formTextBox"
+              type="text"
+              placeholder="Write your message here..."
+            />
+          </form>
+        </div>
         <button class="submitButton">Submit</button>
       </article>
     </section>
     <footer class="footerSection">
-        <article class="footerFlex">
-          <aside id="footerContainerLeft">
-            <img id="footerLogo" src="project-assets/logos/circle.svg" alt="Circle Logo" />
-            <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
-          </aside>
-          <aside id="footerContainerRightGrid">
-            <a href="#">Team</a>
-            <a href="#">Services</a>
-            <a href="#">About Us</a>
-            <a href="#">Press</a>
-            <a href="#">Projects</a>
-            <a href="#">Privacy policy</a>
-          </aside>
-        </article>
-      </footer>
+      <article class="footerFlex">
+        <aside id="footerContainerLeft">
+          <img
+            id="footerLogo"
+            src="project-assets/logos/circle.svg"
+            alt="Circle Logo"
+          />
+          <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+        </aside>
+        <aside id="footerContainerRightGrid">
+          <a href="#">Team</a>
+          <a href="#">Services</a>
+          <a href="#">About Us</a>
+          <a href="#">Press</a>
+          <a href="#">Projects</a>
+          <a href="#">Privacy policy</a>
+        </aside>
+      </article>
+    </footer>
   </body>
 </html>
